@@ -4,13 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alphabet-Pro clash js resources</title>
-</head>
-<body>
-    <header>
+    <!-- css link -->
+     <link rel="stylesheet" href="Styles/css.css">
+    <!-- Tailwind and Daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
+</head>
+<body class="font-poppins">
+
+    <header>
+        <!-- navbar start  -->
+        <nav>
+
+            <div class="flex justify-between bg-blue-300 rounded-md p-2 px-8  w-full">
+              <!-- nav title -->
+              <div>
+                <h1 class="text-2xl font-extrabold ">Interactive</h1>
+                <h2 class="text-2xl font-extralight">Genius Game</h2>
+              </div>
+              <!-- nav button -->
+              <div class="card-actions pt-2 ">
+                <button class="btn btn-primary px-8">Blog</button>
+              </div>
+            </div>
+          </nav>
     </header>
-    <main>
-        
+    <main class="home  min-h-screen  bg-[#010313] bg-[url(./images/background.png)] bg-no-repeat bg-center ">
+      <!-- Home screan -->
+        <section class="min-h-screen flex flex-col justify-center ">   
+          <div class="flex flex-col items-center   gap-6">
+            <h1 class="font-anton text-white font-anton text-9xl">ALPHABET CLASH</h1>
+            <p class="text-xl text-white font-bold">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+            <button class="bg-white text-black p-2 rounded-md font-bold hover:bg-slate-400 transition duration-300">Play Now</button>
+          </div>
+        </section>
+
+        <!-- playgraound screan -->
+        <section class="play min-h-screen flex flex-col justify-center hidden">
+          <div>
+            <!-- screan -->
+            <div>
+              <div class="artboard artboard-horizontal phone-6 border-8 rounded-md mx-auto mb-8 mt-8 bg-[#FFFFFFB3] border-gray-600">
+                
+                  <div class="flex  justify-center">
+                    <p class="text-xl text-white bg-gray-700 bg-center w-[450px] text-center rounded-b-md ">Don't watch keyboard  while playing...</p>
+                    </div>
+                    <div class="flex  justify-center  h-full items-center">
+                      <h1 class="text-[#010313] text-9xl font-bold flex ">Y</h1>
+                    </div>
+               
+                  
+               
+              </div>
+            </div>
+
+             <!-- Keyboard -->
+            <div>
+
+              <div class="my-1 flex w-full justify-center gap-2">
+                <kbd class="kbd">q</kbd>
+                <kbd class="kbd">w</kbd>
+                <kbd class="kbd">e</kbd>
+                <kbd class="kbd">r</kbd>
+                <kbd class="kbd">t</kbd>
+                <kbd class="kbd">y</kbd>
+                <kbd class="kbd">u</kbd>
+                <kbd class="kbd">i</kbd>
+                <kbd class="kbd">o</kbd>
+                <kbd class="kbd">p</kbd>
+              </div>
+              <div class="my-1 flex w-full justify-center gap-2 ">
+                <kbd class="kbd">a</kbd>
+                <kbd class="kbd">s</kbd>
+                <kbd class="kbd">d</kbd>
+                <kbd class="kbd">f</kbd>
+                <kbd class="kbd">g</kbd>
+                <kbd class="kbd">h</kbd>
+                <kbd class="kbd">j</kbd>
+                <kbd class="kbd">k</kbd>
+                <kbd class="kbd">l</kbd>
+              </div>
+              <div class="my-1 flex w-full justify-center gap-2">
+                <kbd class="kbd">z</kbd>
+                <kbd class="kbd">x</kbd>
+                <kbd class="kbd">c</kbd>
+                <kbd class="kbd">v</kbd>
+                <kbd class="kbd">b</kbd>
+                <kbd class="kbd">n</kbd>
+                <kbd class="kbd">m</kbd>
+                <kbd class="kbd">/</kbd>
+              </div>
+
+            </div>
+              <!-- like  -->
+               <div class="flex flex-row justify-between m-40">
+                <button class="btn bg-[#894189] h-12 rounded-full p-4 flex  gap-2">
+                  <span class="flex items-center text-white">Life</span>
+                  <img class="flex items-center" src="./images/Group 23.png" alt="">
+                  <span class="flex items-center">1</span>
+                </button>
+                
+                <button class="btn bg-[#360490] h-12 rounded-full p-4 flex  gap-2">
+                 <span class="flex items-center text-white"> Score</span>
+                  <img src="./images/monetization_on.png" alt="">
+                  <span class="flex items-center">1</span>
+                </button>
+               </div>
+          </div>
+        </section>
+
+        <!-- Score screan -->
+        <section class="flex justify-center items-center min-h-screen hidden">
+          <div class="h-14 bg-gradient-to-r   from-[#FFFFFF33] to-violet-500 rounded-md w-1/4 h-48 flex flex-col justify-center items-center gap-3">
+            <h1 class="text-4xl text-white font-bold "><span>Score:</span> <span>14</span></h1>
+            <button class="text-xl font-bold text-black text-center p-2 bg-white rounded-md ">Play Again</button>
+            <p class="text-xl font-medium text-white">Practice will make you Pro</p>
+          </div>
+        </section>
     </main>
 </body>
 </html>
