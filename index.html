@@ -98,27 +98,28 @@
 
             </div>
               <!-- like  -->
-               <div class="flex flex-row justify-between m-40">
-                <button class="btn bg-[#894189] h-12 rounded-full p-4 flex  gap-2">
+               <div class="flex flex-row justify-between m-40 ">
+                <button class="btn bg-[#894189] h-12 rounded-full p-4 flex  gap-2 hover:bg-slate-500 transition duration-300">
                   <span class="flex items-center text-white">Life</span>
                   <img class="flex items-center" src="./images/Group 23.png" alt="">
-                  <span class="flex items-center">1</span>
+                  <span id="current-life" class="flex items-center text-white">5</span>
                 </button>
                 
-                <button class="btn bg-[#360490] h-12 rounded-full p-4 flex  gap-2">
+                <button  class="btn bg-[#360490] h-12  rounded-full p-4 flex  gap-2 hover:bg-slate-500 transition duration-300">
                  <span class="flex items-center text-white"> Score</span>
                   <img src="./images/monetization_on.png" alt="">
-                  <span class="flex items-center">1</span>
+                  <span id="current-score" class="flex items-center text-white ">0</span>
                 </button>
                </div>
           </div>
-        </section>
+ 
 
+        </section>
         <!-- Score screan -->
         <section id="score-screen" class="flex justify-center items-center min-h-screen hidden">
           <div class="h-14 bg-gradient-to-r   from-[#FFFFFF33] to-violet-500 rounded-md w-1/4 h-48 flex flex-col justify-center items-center gap-3">
-            <h1 class="text-4xl text-white font-bold "><span>Score:</span> <span>14</span></h1>
-            <button class="text-xl font-bold text-black text-center p-2 bg-white rounded-md ">Play Again</button>
+            <h1 class="text-4xl text-white font-bold "><span>Score:</span> <span id="score">14</span></h1>
+            <button onclick="play()"  class="text-xl font-bold text-black text-center p-2 bg-white rounded-md ">Play Again</button>
             <p class="text-xl font-medium text-white">Practice will make you Pro</p>
           </div>
         </section>
